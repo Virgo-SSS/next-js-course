@@ -1,9 +1,9 @@
 export default function About() {
-    console.log("console log from about.tsx - server side");
+    throw new Error('This is a client component and should not be rendered on the server.');
     return (
         <>
-        <h1>About</h1>
-        <p>This is the about page.</p>
+            <h1>About</h1>
+            <p>This is the about page.</p>
         </>
     );
 }
